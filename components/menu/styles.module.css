@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 85%;
+    margin: 0px auto;
+    padding: 150px 0px;
+    max-width: 1440px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.head h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.nav {
+    display: flex;
+    gap: 104px;
+    overflow-x: scroll;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+
+.nav p:hover {
+    color: #D68240;
+}
+
+.nav .active {
+    background-color: #D68240;
+    color: white;
+    border-radius: 8px;
+    transition: 1s all ease;
+}
+
+.nav .active:hover {
+    color: white;
+}
+
+.body {
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 46px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 50px;
+    column-gap: 42px;
+}
+
+.single {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 32px;
+}
+
+.single div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.single div h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.single div p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.single h3 {
+    font-size: 16px;
+    color: #D68240;
+    font-weight: 500;
+    width: fit-content;
+}
