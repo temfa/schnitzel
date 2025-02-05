@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .logo svg {
@@ -64,6 +63,10 @@
 
     .navbar a {
         color: black;
+    }
+
+    .logo {
+        width: 100%;
     }
 
     .logo svg {
