@@ -102,3 +102,48 @@
     font-weight: 500;
     width: fit-content;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+        gap: 40px;
+    }
+
+    .head {
+        gap: 20px;
+    }
+
+    .head h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav p {
+        padding: 10px;
+    }
+
+    .body {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+    }
+
+    .single {
+        flex-direction: column;
+    }
+
+    .single div h2 {
+        font-size: 14px;
+    }
+
+    .single div p {
+        font-size: 12px;
+    }
+}

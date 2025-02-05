@@ -7,6 +7,13 @@
     max-width: 1440px;
 }
 
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .logo svg {
     display: none;
 }
@@ -38,4 +45,38 @@
     background-color: #D68240;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        width: 100%;
+        padding: 24px;
+        background-color: white;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .navbar a {
+        color: black;
+    }
+
+    .logo svg {
+        display: block;
+    }
+
+    .header .navbar,
+    .header button {
+        display: none;
+    }
+
+    .mobile .navbar,
+    .mobile button {
+        display: flex;
+    }
 }

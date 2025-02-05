@@ -84,3 +84,25 @@
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        height: fit-content;
+    }
+
+    .wrapper {
+        width: 90%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 50px;
+        align-items: unset;
+    }
+
+    .left h2 {
+        font-size: 40px;
+    }
+
+    .right {
+        padding: 32px;
+    }
+}

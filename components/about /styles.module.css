@@ -54,3 +54,20 @@
     object-position: center center;
     border-radius: 4px;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 95%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .leftBottom h2 {
+        font-size: 28px;
+    }
+
+    .container img {
+        width: 100%;
+    }
+}

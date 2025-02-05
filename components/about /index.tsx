@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="about">
       <div className={styles.left}>
         <div className={styles.leftTop}>
           <p>About Us</p>

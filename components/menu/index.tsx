@@ -47,7 +47,7 @@ const Menu = () => {
     ],
   ];
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="menu">
       <div className={styles.head}>
         <h2>Our Best & Delicious Menu</h2>
         <div className={styles.nav}>
