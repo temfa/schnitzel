@@ -7,11 +7,11 @@ const Opening = () => {
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <div>
-            <p>Reservation</p>
+            <p>Reservierung</p>
             <div></div>
           </div>
-          <h2>Working Hours</h2>
-          <button>Book a Table</button>
+          <h2>Öffnungszeiten</h2>
+          <button>Tisch reservieren</button>
         </div>
         <div className={styles.right}>
           <div>

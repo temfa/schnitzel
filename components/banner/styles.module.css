@@ -51,7 +51,7 @@
     gap: 40px;
 }
 
-.body div button:first-child {
+.body div a:first-child {
     border: 1px solid white;
     padding: 12px 16px;
     font-size: 16px;
@@ -62,7 +62,7 @@
     cursor: pointer;
 }
 
-.body div button:last-child {
+.body div a:last-child {
     border: none;
     padding: 12px 0px;
     font-size: 16px;
@@ -92,5 +92,9 @@
     .body h2 {
         font-size: 48px;
         text-align: center;
+    }
+
+    .body div a {
+        font-size: 13px !important;
     }
 }

@@ -4,52 +4,53 @@ import styles from "./styles.module.css";
 
 const Menu = () => {
   const [active, setActive] = useState(0);
-  const headers = ["Schnitzel", "Little Guests", "Salads"];
+  const headers = ["Schnitzel", "Kleine Gäste", "Salate"];
   const menu = [
     [
-      { title: 'Schnitzel "Wiener Style" with lemon', price: "€15.50 / €16.50" },
-      { title: 'Schnitzel "Hunter Style" with mushrooms', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Balkan Style" with paprika, onions, and corn', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Tomato" with fresh tomatoes, onions, hollandaise, and cheese au gratin', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Hawaii" with pineapple, ham, hollandaise, cheese au gratin, and lingonberries', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Cordon Bleu" stuffed with ham and cheese', price: "€18.50 / €19.50" },
-      { title: "Schnitzel in Creamy Mushroom Sauce with fresh mushrooms and cream sauce", price: "€18.50 / €19.50" },
-      { title: "Schnitzel with diced ham, onions, and cheese au gratin", price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Knofi" with sautéed onions and fresh garlic', price: "€18.50 / €19.50" },
-      { title: "Schnitzel with tomato, mozzarella, and pesto au gratin", price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Berlin Style" with cooked ham, hollandaise, and cheese au gratin', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Holstein Style" with fried eggs and bacon', price: "€18.50 / €19.50" },
-      { title: "Schnitzel topped with caramelized onions and fresh mushrooms", price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Alsace Style" with sautéed onions and diced ham in sour cream', price: "€18.50 / €19.50" },
-      { title: '"Onion Schnitzel" with sautéed onions', price: "€18.50 / €19.50" },
-      { title: '"Asparagus Schnitzel" with asparagus, hollandaise, and cheese au gratin', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Swiss Style" with spicy cheese sauce', price: "€18.50 / €19.50" },
-      { title: '"Pepper Schnitzel" with spicy pepper sauce', price: "€18.50 / €19.50" },
-      { title: '"Devil\'s Schnitzel" with fresh chili peppers, onions, and Tabasco', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Camembert" with apple slices, Camembert au gratin, and lingonberries', price: "€18.50 / €19.50" },
-      { title: '"Broccoli Schnitzel" with broccoli, hollandaise, and cheese au gratin', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Greek Style" with feta cheese, onions, and hollandaise au gratin', price: "€18.50 / €19.50" },
-      { title: 'Schnitzel "Dutch Style" covered in spicy hollandaise (also available with regular hollandaise)', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Wiener Art" mit Zitrone', price: "€15.50 / €16.50" },
+      { title: 'Schnitzel "Jäger Art" mit Champignons', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Balkan Art" mit Paprika, Zwiebeln und Mais', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Tomate" mit frischen Tomaten, Zwiebeln, Sauce Hollandaise und gratiniertem Käse', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Hawaii" mit Ananas, Schinken, Sauce Hollandaise, gratiniertem Käse und Preiselbeeren', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Cordon Bleu" gefüllt mit Schinken und Käse', price: "€18.50 / €19.50" },
+      { title: "Schnitzel in cremiger Pilzsauce mit frischen Champignons und Rahmsauce", price: "€18.50 / €19.50" },
+      { title: "Schnitzel mit gewürfeltem Schinken, Zwiebeln und gratiniertem Käse", price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Knofi" mit gebratenen Zwiebeln und frischem Knoblauch', price: "€18.50 / €19.50" },
+      { title: "Schnitzel mit Tomate, Mozzarella und Pesto gratiniert", price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Berliner Art" mit gekochtem Schinken, Sauce Hollandaise und gratiniertem Käse', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Holsteiner Art" mit Spiegelei und Speck', price: "€18.50 / €19.50" },
+      { title: "Schnitzel mit karamellisierten Zwiebeln und frischen Champignons", price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Elsässer Art" mit gebratenen Zwiebeln und gewürfeltem Schinken in Sauerrahm', price: "€18.50 / €19.50" },
+      { title: '"Zwiebelschnitzel" mit gebratenen Zwiebeln', price: "€18.50 / €19.50" },
+      { title: '"Spargelschnitzel" mit Spargel, Sauce Hollandaise und gratiniertem Käse', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Schweizer Art" mit würziger Käsesauce', price: "€18.50 / €19.50" },
+      { title: '"Pfefferschnitzel" mit würziger Pfeffersauce', price: "€18.50 / €19.50" },
+      { title: '"Teufelsschnitzel" mit frischen Chilischoten, Zwiebeln und Tabasco', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Camembert" mit Apfelscheiben, gratiniertem Camembert und Preiselbeeren', price: "€18.50 / €19.50" },
+      { title: '"Brokkolischnitzel" mit Brokkoli, Sauce Hollandaise und gratiniertem Käse', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Griechische Art" mit Feta-Käse, Zwiebeln und gratinierter Sauce Hollandaise', price: "€18.50 / €19.50" },
+      { title: 'Schnitzel "Holländische Art" überzogen mit würziger Sauce Hollandaise (auch mit normaler Hollandaise erhältlich)', price: "€18.50 / €19.50" },
     ],
     [
-      { title: "Chicken Nuggets with Fries", price: "€9.50" },
-      { title: '"Kids\' Schnitzel" with Fries', price: "€9.50" },
-      { title: "Portion of Fries", price: "€3.80" },
-      { title: "Goulash Soup", price: "€6.90" },
-      { title: "Currywurst with Fries", price: "€8.50" },
-      { title: '"Hawaii Toast" with ham, pineapple, cheese au gratin, and a side salad', price: "€9.50" },
-      { title: "Omelette (choice of mushrooms or ham, with cheese au gratin and a side salad)", price: "€10.50" },
+      { title: "Chicken Nuggets mit Pommes", price: "€9.50" },
+      { title: '"Kinder-Schnitzel" mit Pommes', price: "€9.50" },
+      { title: "Portion Pommes", price: "€3.80" },
+      { title: "Gulaschsuppe", price: "€6.90" },
+      { title: "Currywurst mit Pommes", price: "€8.50" },
+      { title: '"Hawaii-Toast" mit Schinken, Ananas, gratiniertem Käse und Beilagensalat', price: "€9.50" },
+      { title: "Omelett (wahlweise mit Champignons oder Schinken, gratiniertem Käse und Beilagensalat)", price: "€10.50" },
     ],
     [
-      { title: "Mixed Salad with ham and cheese", price: "€10.50" },
-      { title: "Greek Salad with feta cheese, olives, and chili peppers", price: "€10.50" },
-      { title: "Colorful Salad with turkey strips", price: "€12.50" },
+      { title: "Gemischter Salat mit Schinken und Käse", price: "€10.50" },
+      { title: "Griechischer Salat mit Feta-Käse, Oliven und Peperoni", price: "€10.50" },
+      { title: "Bunter Salat mit Putenstreifen", price: "€12.50" },
     ],
   ];
+
   return (
     <div className={styles.container} id="menu">
       <div className={styles.head}>
-        <h2>Our Best & Delicious Menu</h2>
+        <h2>Unser bestes & köstliches Menü</h2>
         <div className={styles.nav}>
           {headers?.map((item, index) => {
             return (
@@ -66,7 +67,7 @@ const Menu = () => {
             <div className={styles.single} key={index}>
               <div>
                 <h2>{item.title}</h2>
-                <p>Its the perfect dining experience where Experience quick and efficient</p>
+                <p>Es ist das perfekte kulinarische Erlebnis, bei dem Sie schnell und effizient bedient werden.</p>
               </div>
               <h3>{item.price}</h3>
             </div>

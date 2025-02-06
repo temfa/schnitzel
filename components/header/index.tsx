@@ -10,24 +10,24 @@ export const Header = () => {
   return (
     <div className={mobile ? `${styles.mobile} ${styles.header}` : styles.header}>
       <div className={styles.logo}>
-        <h2>Das Schnitzelparadis</h2>
+        <h2>Das Schnitzelparadies</h2>
         {mobile ? <Close action={() => setMobile(false)} /> : <Bars action={() => setMobile(true)} />}
       </div>
       <div className={styles.navbar}>
         <Link href="/" onClick={() => setMobile(false)}>
-          Home
+          Startseite
         </Link>
         <Link href="/#about" onClick={() => setMobile(false)}>
-          About
+          Über Uns
         </Link>
         <Link href="/#contact" onClick={() => setMobile(false)}>
-          Contact
+          Kontakt
         </Link>
         <Link href="/#menu" onClick={() => setMobile(false)}>
-          Menu
+          Speisekarte
         </Link>
       </div>
-      <button>Book a Table</button>
+      <button>Tisch Reservieren</button>
     </div>
   );
 };
