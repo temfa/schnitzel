@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 const Opening = () => {
   return (
@@ -11,7 +12,9 @@ const Opening = () => {
             <div></div>
           </div>
           <h2>Öffnungszeiten</h2>
-          <button>Tisch reservieren</button>
+          <Link href="tel:+0551-61559" target="_blank">
+            Tisch reservieren
+          </Link>
         </div>
         <div className={styles.right}>
           <div>

@@ -13,7 +13,9 @@ const Banner = () => {
           <p>HALLO, NEUER FREUND</p>
           <h2>RESERVIERE DEINEN TISCH</h2>
           <div>
-            <Link href="/">Tisch Reservieren</Link>
+            <Link href="tel:+0551-61559" target="_blank">
+              Tisch Reservieren
+            </Link>
             <Link href="/#menu">Speisekarte Öffnen</Link>
           </div>
         </div>
