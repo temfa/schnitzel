@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/react-slick": "^0.23.13",
+    "aos": "^2.3.4",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-image-lightbox": "^5.1.4",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -19,7 +19,12 @@
 }
 
 .container a {
+    border: 1px solid white;
+    padding: 12px 32px;
     font-size: 32px;
     font-weight: 700;
-    line-height: 110%;
+    color: white;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
 }

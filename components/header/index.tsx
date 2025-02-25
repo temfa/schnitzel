@@ -21,14 +21,16 @@ export const Header = () => {
         <Link href="/#about" onClick={() => setMobile(false)}>
           Über Uns
         </Link>
-        <Link href="/#contact" onClick={() => setMobile(false)}>
-          Kontakt
-        </Link>
         <Link href="/#menu" onClick={() => setMobile(false)}>
           Speisekarte
         </Link>
+        <Link href="/#contact" onClick={() => setMobile(false)}>
+          Kontakt
+        </Link>
       </div>
-      <button>Tisch Reservieren</button>
+      <Link href="tel:+0551-61559" target="_blank">
+        Tisch Reservieren
+      </Link>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const Banner = () => {
       <div className={styles.content}>
         <Header />
         <div className={styles.body}>
-          <p>HALLO, NEUER FREUND</p>
+          <p>WILLKOMMEN</p>
           <h2>RESERVIERE DEINEN TISCH</h2>
           <div>
             <Link href="tel:+0551-61559" target="_blank">

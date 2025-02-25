@@ -49,8 +49,9 @@ const Menu = () => {
 
   return (
     <div className={styles.container} id="menu">
-      <div className={styles.head}>
+      <div className={styles.head} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
         <h2>Unser bestes & köstliches Menü</h2>
+        <p>Alle Schnitzel auch in Xl 500 Gramm und größer erhältlich erhältlich!</p>
         <div className={styles.nav}>
           {headers?.map((item, index) => {
             return (
@@ -64,7 +65,7 @@ const Menu = () => {
       <div className={styles.body}>
         {menu[active]?.map((item, index) => {
           return (
-            <div className={styles.single} key={index}>
+            <div className={styles.single} key={index} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
               <div>
                 <h2>{item.title}</h2>
                 <p>Es ist das perfekte kulinarische Erlebnis, bei dem Sie schnell und effizient bedient werden.</p>

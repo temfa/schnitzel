@@ -6,7 +6,7 @@ const Opening = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <div className={styles.left}>
+        <div className={styles.left} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
           <div>
             <p>Reservierung</p>
             <div></div>
@@ -16,7 +16,7 @@ const Opening = () => {
             Tisch reservieren
           </Link>
         </div>
-        <div className={styles.right}>
+        <div className={styles.right} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
           <div>
             <h3>Mittwoch - Samstag</h3>
             <p>16:00 Uhr bis 22:00 Uhr</p>

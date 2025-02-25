@@ -49,6 +49,12 @@
     font-weight: 500;
 }
 
+.leftBottom h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+
 .container img {
     object-fit: contain;
     object-position: center center;

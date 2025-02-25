@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
+import { Providers } from "@/provider";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "react-image-lightbox/style.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -22,8 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} `}>
-        {children}
-        <Footer />
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
