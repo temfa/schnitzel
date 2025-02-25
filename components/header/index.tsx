@@ -21,6 +21,9 @@ export const Header = () => {
         <Link href="/#about" onClick={() => setMobile(false)}>
           Über Uns
         </Link>
+        <Link href="/#gallery" onClick={() => setMobile(false)}>
+          Galerie
+        </Link>
         <Link href="/#menu" onClick={() => setMobile(false)}>
           Speisekarte
         </Link>

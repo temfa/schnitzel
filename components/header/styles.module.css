@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 820px) {
     .header {
         width: 100%;
         padding: 8px 24px;
@@ -79,7 +79,7 @@
     }
 
     .header .navbar,
-    .header button {
+    .header>a {
         display: none;
     }
 
