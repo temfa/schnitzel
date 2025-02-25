@@ -64,9 +64,26 @@
 }
 
 .body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
     border: 1px solid black;
     border-radius: 13px;
     padding: 46px;
+}
+
+.body>p {
+    background-color: #D68240;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.cont {
     display: grid;
     grid-template-columns: 2fr 2fr;
     row-gap: 50px;
@@ -134,7 +151,13 @@
         padding: 10px;
     }
 
-    .body {
+    .body>p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .cont {
         padding: 24px;
         display: flex;
         flex-direction: column;

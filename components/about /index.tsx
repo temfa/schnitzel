@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
-import Link from "next/link";
 
 const About = () => {
   return (
@@ -12,17 +11,17 @@ const About = () => {
           <div></div>
         </div>
         <div className={styles.leftBottom}>
-          <h2>Wir laden Sie ein, unser Café zu besuchen</h2>
+          <h2>Willkommen im Schnitzelparadies!</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Dolor elit vitae nunc varius. Facilisis eget cras sit semper sit enim. Turpis aliquet at ac eu donec ut. Sagittis vestibulum at
-            quis non massa netus.
+            Genieße bei uns knusprig-goldene Schnitzel, frisch zubereitet und mit Liebe serviert. Ob klassisch, kreativ oder vegetarisch – hier ist für jeden Geschmack etwas dabei!
           </p>
-          <h3>
+          <p>Komm vorbei und probiere es selbst!</p>
+          {/* <h3>
             Follow us on instagram:{" "}
             <Link href="https://www.instagram.com/schnitzelparadies_goettingen?igsh=bWxscmVsdW1hOGpp" target="_blank">
               @schnitzelparadies_goettingen
             </Link>
-          </h3>
+          </h3> */}
         </div>
       </div>
       <Image
