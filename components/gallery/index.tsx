@@ -91,7 +91,7 @@ const Gallery = () => {
           </svg>
         </Link>
         <Link href="https://www.instagram.com/schnitzelparadies_goettingen?igsh=bWxscmVsdW1hOGpp" target="_blank">
-          <h2>Follow @schnitzelparadies_goettingen</h2>
+          <h2>Folge @schnitzelparadies_goettingen</h2>
         </Link>
       </div>
       {/* <Masonry breakpointCols={breakpointColumnsObj} className={styles.masonryGrid} columnClassName={styles.masonryGridColumn}> */}
