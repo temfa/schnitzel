@@ -98,3 +98,14 @@
         font-size: 13px !important;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .body h2 {
+        font-size: 32px;
+    }
+
+    .body div a {
+        font-size: 10px !important;
+        text-align: center;
+    }
+}

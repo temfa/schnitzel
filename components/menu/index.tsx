@@ -51,7 +51,6 @@ const Menu = () => {
     <div className={styles.container} id="menu">
       <div className={styles.head} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
         <h2>Unser bestes & köstliches Menü</h2>
-
         <div className={styles.nav}>
           {headers?.map((item, index) => {
             return (

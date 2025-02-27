@@ -70,3 +70,10 @@
         font-size: 12px;
     } */
 }
+
+@media screen and (max-width: 400px) {
+    .container>h2 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+}

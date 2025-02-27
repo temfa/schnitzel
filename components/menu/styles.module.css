@@ -158,7 +158,6 @@
     }
 
     .cont {
-        padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -176,4 +175,30 @@
     .single div p {
         font-size: 12px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        padding: 24px;
+    }
+
+    .body>p {
+        font-size: 16px;
+    }
+
+    .head h2 {
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .nav {
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    .nav p {
+        font-size: 14px;
+    }
+
 }
