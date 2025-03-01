@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1025px) {
     .header {
         width: 100%;
         padding: 8px 24px;
