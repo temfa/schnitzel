@@ -36,7 +36,7 @@ const Menu = () => {
       { title: '"Kinder-Schnitzel" mit Pommes', price: "€9.50" },
       { title: "Portion Pommes", price: "€3.80" },
       { title: "Gulaschsuppe", price: "€6.90" },
-      { title: "Currywurst mit Pommes", price: "€8.50" },
+      { title: "Currywurst mit Pommes", price: "€9.50" },
       { title: '"Hawaii-Toast" mit Schinken, Ananas, gratiniertem Käse und Beilagensalat', price: "€9.50" },
       { title: "Omelett (wahlweise mit Champignons oder Schinken, gratiniertem Käse und Beilagensalat)", price: "€10.50" },
     ],
@@ -51,6 +51,7 @@ const Menu = () => {
     <div className={styles.container} id="menu">
       <div className={styles.head} data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-mirror="true" data-aos-once="false">
         <h2>Unser bestes & köstliches Menü</h2>
+        <p>Wir bieten unser Fleisch in Schwein und Pute an.</p>
         <div className={styles.nav}>
           {headers?.map((item, index) => {
             return (
